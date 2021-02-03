@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{b5ec058e-4402-4487-b7af-399c649e3eb2}">
+		<property name="assetPath">
+			<value>SFX/ESM_Purple_Missle_Explosion_Sound_FX_Military.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.1650113378684808</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84ad37d9-b3ef-46ba-af15-13f06777a264}</destination>
+		</relationship>
+	</object>
+</objects>

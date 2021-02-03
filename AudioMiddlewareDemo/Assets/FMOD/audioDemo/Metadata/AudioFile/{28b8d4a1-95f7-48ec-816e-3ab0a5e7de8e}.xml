@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{28b8d4a1-95f7-48ec-816e-3ab0a5e7de8e}">
+		<property name="assetPath">
+			<value>Atlantic Roads/008_Pads_-_Belle_On_The_Beach_92bpm_Cm_-_80SFORSERUM_Zenhiser.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>166.9565306122449</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84ad37d9-b3ef-46ba-af15-13f06777a264}</destination>
+		</relationship>
+	</object>
+</objects>

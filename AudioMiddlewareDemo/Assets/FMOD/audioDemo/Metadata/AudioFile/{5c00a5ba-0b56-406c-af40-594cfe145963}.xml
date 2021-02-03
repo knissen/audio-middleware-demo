@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{5c00a5ba-0b56-406c-af40-594cfe145963}">
+		<property name="assetPath">
+			<value>SFX/AT/AT_fx_robot_servos.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>14.417573696145125</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84ad37d9-b3ef-46ba-af15-13f06777a264}</destination>
+		</relationship>
+	</object>
+</objects>

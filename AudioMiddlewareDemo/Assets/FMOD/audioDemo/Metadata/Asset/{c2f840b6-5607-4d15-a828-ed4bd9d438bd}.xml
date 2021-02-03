@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="EncodableAsset" id="{c2f840b6-5607-4d15-a828-ed4bd9d438bd}">
+		<property name="assetPath">
+			<value>Atlantic Roads/</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84ad37d9-b3ef-46ba-af15-13f06777a264}</destination>
+		</relationship>
+	</object>
+</objects>

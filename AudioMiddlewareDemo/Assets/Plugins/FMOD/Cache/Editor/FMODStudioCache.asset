@@ -15,12 +15,35 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476186017007981
+  lastModified: 637479019378542522
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 688
+    Value: 1022
   Exists: 1
+--- !u!114 &-7253081837018224355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/AtlanticRoads
+  m_EditorClassIdentifier: 
+  Path: event:/Music/AtlanticRoads
+  guid: 208d64096b40e042912722d2bfee4992
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 166956
 --- !u!114 &-7026174651546890743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,10 +59,33 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637476186016968001
+  lastModified: 637479019378502545
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-5808363365139334983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/FlockOfGeese
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/FlockOfGeese
+  guid: f5420ad70e829647bde9fb05b4f2aad1
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55,11 +101,106 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -8439730817516687894}
   - {fileID: -7026174651546890743}
-  EditorEvents: []
-  EditorParameters: []
+  EditorEvents:
+  - {fileID: -7253081837018224355}
+  - {fileID: 6032817230315328886}
+  - {fileID: 9021256777062617006}
+  - {fileID: 2765651184188750698}
+  - {fileID: -5808363365139334983}
+  EditorParameters:
+  - {fileID: 855862323195444300}
   MasterBanks:
   - {fileID: -7026174651546890743}
   StringsBanks:
   - {fileID: -8439730817516687894}
-  stringsBankWriteTime: 637476186017007981
+  stringsBankWriteTime: 637479019378542522
   cacheVersion: 6
+--- !u!114 &855862323195444300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LevelEnd
+  m_EditorClassIdentifier: 
+  Name: LevelEnd
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 279298302
+    data2: 105250514
+  Exists: 1
+--- !u!114 &2765651184188750698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/OrionTrack
+  m_EditorClassIdentifier: 
+  Path: event:/Music/OrionTrack
+  guid: f32fe4041207de44bdd47179f85ed29b
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 178909
+--- !u!114 &6032817230315328886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/FrenchConnection
+  m_EditorClassIdentifier: 
+  Path: event:/Music/FrenchConnection
+  guid: 29a2f7f6f5f89643a2b4347728cf96d3
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 204521
+--- !u!114 &9021256777062617006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/CreepyAmbient
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/CreepyAmbient
+  guid: 4320e52338131349a0dd7147ad3f698d
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
