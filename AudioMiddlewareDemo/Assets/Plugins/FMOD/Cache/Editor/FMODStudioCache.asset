@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8619960915055567803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-8439730817516687894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +35,11 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637479019378542522
+  lastModified: 637483730784803622
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1022
+    Value: 1390
   Exists: 1
 --- !u!114 &-7253081837018224355
 MonoBehaviour:
@@ -44,6 +64,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 166956
+--- !u!114 &-7048880460230054627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-7026174651546890743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +99,7 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637479019378502545
+  lastModified: 637483730784738991
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -86,6 +126,52 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3500
+--- !u!114 &-5366195777595159106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/MenuNavigation
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/MenuNavigation
+  guid: 41bd4c0fdd01924395ea1cd725c52f9b
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90
+--- !u!114 &-4293931086940932027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/BasicMenuButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/BasicMenuButton
+  guid: b673d2ea11c52545a9f2b3093203e61b
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 290
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,14 +193,44 @@ MonoBehaviour:
   - {fileID: 9021256777062617006}
   - {fileID: 2765651184188750698}
   - {fileID: -5808363365139334983}
+  - {fileID: 3350337708776580784}
+  - {fileID: -4293931086940932027}
+  - {fileID: -5366195777595159106}
+  - {fileID: 1824934900536321282}
+  - {fileID: 441604261358228330}
   EditorParameters:
   - {fileID: 855862323195444300}
   MasterBanks:
   - {fileID: -7026174651546890743}
   StringsBanks:
   - {fileID: -8439730817516687894}
-  stringsBankWriteTime: 637479019378542522
+  stringsBankWriteTime: 637483730784803622
   cacheVersion: 6
+--- !u!114 &441604261358228330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/The Midnight - Deep Blue
+  m_EditorClassIdentifier: 
+  Path: event:/Music/The Midnight - Deep Blue
+  guid: 0078a813c7d61048b4481823f419809f
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8619960915055567803}
+  - {fileID: -7048880460230054627}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 241893
 --- !u!114 &855862323195444300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +251,51 @@ MonoBehaviour:
     data1: 279298302
     data2: 105250514
   Exists: 1
+--- !u!114 &1148674593604005095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/BasicMenuButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/BasicMenuButton
+  guid: b673d2ea11c52545a9f2b3093203e61b
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 664
+--- !u!114 &1824934900536321282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/MultiInstrumentButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/MultiInstrumentButton
+  guid: ebadbc9ea9fc3342b2c4afc47ec6deb6
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 507
 --- !u!114 &2765651184188750698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,6 +319,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 178909
+--- !u!114 &3350337708776580784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/UI/RandomizedMenuButton
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/UI/RandomizedMenuButton
+  guid: 528ebb49f5391f42ba6f57bff109ca83
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 290
 --- !u!114 &6032817230315328886
 MonoBehaviour:
   m_ObjectHideFlags: 0

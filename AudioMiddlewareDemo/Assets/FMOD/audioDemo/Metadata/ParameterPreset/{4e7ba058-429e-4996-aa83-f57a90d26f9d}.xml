@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{4e7ba058-429e-4996-aa83-f57a90d26f9d}">
+		<property name="name">
+			<value>VocalBridge</value>
+		</property>
+		<relationship name="folder">
+			<destination>{be30f4eb-8db8-485b-8530-4cf086449746}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{140bd8e3-02c7-444d-b5db-c0ddf6b4ef57}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{140bd8e3-02c7-444d-b5db-c0ddf6b4ef57}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

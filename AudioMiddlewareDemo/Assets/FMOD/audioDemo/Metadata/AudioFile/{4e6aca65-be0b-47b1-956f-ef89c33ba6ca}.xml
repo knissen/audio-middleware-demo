@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{4e6aca65-be0b-47b1-956f-ef89c33ba6ca}">
+		<property name="assetPath">
+			<value>SFX/Beeps/ESM_Successful_Game_Item_Touch_11_Sound_FX_Arcade_Casino_Kids_Mobile_Positive_Achievement_Win.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.0608843537414967</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{84ad37d9-b3ef-46ba-af15-13f06777a264}</destination>
+		</relationship>
+	</object>
+</objects>

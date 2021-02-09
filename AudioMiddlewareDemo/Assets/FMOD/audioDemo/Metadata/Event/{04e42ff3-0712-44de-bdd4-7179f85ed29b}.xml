@@ -355,7 +355,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{77618478-5d7f-461e-b637-49f55e473a52}">
 		<property name="volume">
-			<value>-6</value>
+			<value>-10</value>
 		</property>
 		<property name="name">
 			<value>Audio 4</value>
@@ -651,7 +651,7 @@
 	</object>
 	<object class="NamedMarker" id="{d1132717-6622-40c5-a2cf-5908b9c13a8c}">
 		<property name="position">
-			<value>69.818181818181813</value>
+			<value>72</value>
 		</property>
 		<property name="name">
 			<value>Main Loop</value>
@@ -679,7 +679,7 @@
 	</object>
 	<object class="TempoMarker" id="{e3043b36-34e0-4e86-a65f-09d15d5b82bb}">
 		<property name="position">
-			<value>0</value>
+			<value>2.1818181818181817</value>
 		</property>
 		<property name="tempo">
 			<value>110</value>
