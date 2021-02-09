@@ -14,7 +14,12 @@ public class TriggerOnBeat : MonoBehaviour
         public int currentMusicBar = 0;
         public int currentBeat = 0;
         public FMOD.StringWrapper lastMarker = new FMOD.StringWrapper();
+        public float currentTempo = 0;
     }
+
+    public event System.EventHandler Beat;
+
+    public float CurrentTempo { get { return _timelineInfo != null ? _timelineInfo.currentTempo : 0f; } }
 
     [SerializeField] [EventRef] private string _musicEventRef = "";
 
@@ -51,6 +56,7 @@ public class TriggerOnBeat : MonoBehaviour
         if (_timelineInfo.currentBeat != -1)
         {
             actionOnOne?.Invoke();
+            Beat?.Invoke(this, EventArgs.Empty);
 
             _timelineInfo.currentBeat = -1;
         }
@@ -64,10 +70,10 @@ public class TriggerOnBeat : MonoBehaviour
         _timelineHandle.Free();
     }
 
-    void OnGUI()
-    {
-        GUILayout.Box(String.Format("Current Beat = {0}, Current Bar = {1}, Last Marker = {2}", _timelineInfo.currentBeat, _timelineInfo.currentMusicBar, (string)_timelineInfo.lastMarker));
-    }
+    //void OnGUI()
+    //{
+    //    GUILayout.Box(String.Format("Current Beat = {0}, Current Bar = {1}, Last Marker = {2}", _timelineInfo.currentBeat, _timelineInfo.currentMusicBar, (string)_timelineInfo.lastMarker));
+    //}
 
     [AOT.MonoPInvokeCallback(typeof(FMOD.Studio.EVENT_CALLBACK))]
     static FMOD.RESULT BeatEventCallback(FMOD.Studio.EVENT_CALLBACK_TYPE type, IntPtr instancePtr, IntPtr parameterPtr)
@@ -94,6 +100,7 @@ public class TriggerOnBeat : MonoBehaviour
                         var parameter = (FMOD.Studio.TIMELINE_BEAT_PROPERTIES)Marshal.PtrToStructure(parameterPtr, typeof(FMOD.Studio.TIMELINE_BEAT_PROPERTIES));
                         timelineInfo.currentMusicBar = parameter.bar;
                         timelineInfo.currentBeat = parameter.beat;
+                        timelineInfo.currentTempo = parameter.tempo;
                     }
                     break;
                 case FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER:
@@ -104,6 +111,7 @@ public class TriggerOnBeat : MonoBehaviour
                     break;
             }
         }
+
         return FMOD.RESULT.OK;
     }
 }
