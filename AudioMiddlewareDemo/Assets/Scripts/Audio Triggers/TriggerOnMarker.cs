@@ -36,13 +36,14 @@ public class TriggerOnMarker : MonoBehaviour
 
         // Pass a pointer to the info variable to the event instance so it can fill it with data in the callback
         eventEmitter.EventInstance.setUserData(GCHandle.ToIntPtr(_markerHandle));
-        //eventEmitter.EventInstance.setCallback(OnMarkerHit, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
+        eventEmitter.EventInstance.setCallback(OnMarkerHit, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
     }
 
     private void Update()
     {
         if (!string.IsNullOrEmpty(_markerInfo.lastMarker) && markerName.Equals(_markerInfo.lastMarker))
         {
+            UnityEngine.Debug.Log("Marker hit");
             actionOnMarker.Invoke();
 
             // Clear the entry so we don't repeat this till next time its set

@@ -35,12 +35,36 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637483730784803622
+  lastModified: 637488942118432883
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1390
+    Value: 1484
   Exists: 1
+--- !u!114 &-8323918058257652145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Geese/FlockOfGeese
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Geese/FlockOfGeese
+  guid: f5420ad70e829647bde9fb05b4f2aad1
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -4288701226132172327}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3500
 --- !u!114 &-7253081837018224355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84,6 +108,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-7028827830697868824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-7026174651546890743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,9 +143,29 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637483730784738991
+  lastModified: 637488942118372875
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-5970307655692998662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-5808363365139334983
 MonoBehaviour:
@@ -172,6 +236,66 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 290
+--- !u!114 &-4288701226132172327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-2020034622055620832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-1924043664589721364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,19 +316,20 @@ MonoBehaviour:
   - {fileID: 6032817230315328886}
   - {fileID: 9021256777062617006}
   - {fileID: 2765651184188750698}
-  - {fileID: -5808363365139334983}
   - {fileID: 3350337708776580784}
   - {fileID: -4293931086940932027}
   - {fileID: -5366195777595159106}
   - {fileID: 1824934900536321282}
   - {fileID: 441604261358228330}
+  - {fileID: 8242743017387462775}
+  - {fileID: -8323918058257652145}
   EditorParameters:
   - {fileID: 855862323195444300}
   MasterBanks:
   - {fileID: -7026174651546890743}
   StringsBanks:
   - {fileID: -8439730817516687894}
-  stringsBankWriteTime: 637483730784803622
+  stringsBankWriteTime: 637488942118432883
   cacheVersion: 6
 --- !u!114 &441604261358228330
 MonoBehaviour:
@@ -226,8 +351,8 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8619960915055567803}
-  - {fileID: -7048880460230054627}
+  - {fileID: 2899271803504402849}
+  - {fileID: -5970307655692998662}
   MinDistance: 0
   MaxDistance: 0
   Length: 241893
@@ -319,6 +444,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 178909
+--- !u!114 &2899271803504402849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &3350337708776580784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -342,6 +487,46 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 290
+--- !u!114 &4632633425095401195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &4636674450002809719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &6032817230315328886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,6 +550,69 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 204521
+--- !u!114 &6485870282296728616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &7379304615302155775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &8242743017387462775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Geese/GooseHonk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/Geese/GooseHonk
+  guid: 4452bd4120fddc42b79108bf0b7a9609
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 832
 --- !u!114 &9021256777062617006
 MonoBehaviour:
   m_ObjectHideFlags: 0
