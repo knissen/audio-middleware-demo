@@ -19,6 +19,9 @@ AudioMiddlewareDemo/[Mm]emoryCaptures/
 # Visual Studio cache directory
 .vs/
 
+#FMOD files
+AudioMiddlewareDemo/fmod_editor.log
+
 # Gradle cache directory
 .gradle/
 
