@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GeeseManager : MonoBehaviour
@@ -14,6 +15,9 @@ public class GeeseManager : MonoBehaviour
     [Header("Audio Hookups")]
     [SerializeField] private FMODUnity.StudioEventEmitter _emitter = default;
     [SerializeField] private string _parameterName = "Count";
+
+    [Header("UI Display")]
+    [SerializeField] private TextMeshProUGUI parameterDisplayText = default;
 
     public int GeeseCount { get; private set; }
 
@@ -30,6 +34,8 @@ public class GeeseManager : MonoBehaviour
 
     private void UpdateAudioParameter()
     {
+        parameterDisplayText.text = $"{_parameterName}: {transform.childCount}";
+
         _emitter.SetParameter(_parameterName, transform.childCount);
     }
 

@@ -96,7 +96,7 @@
 			<value>50.5</value>
 		</property>
 		<property name="length">
-			<value>6</value>
+			<value>3.75</value>
 		</property>
 		<property name="polyphony">
 			<value>32</value>
@@ -145,7 +145,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>6</value>
+			<value>3.75</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{a9bd4c89-5944-4faa-b9b7-f1704eef378d}</destination>
