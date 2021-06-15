@@ -1,4 +1,4 @@
-﻿using FMOD;
+﻿using FMODUnity;
 using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
@@ -22,7 +22,8 @@ public class TriggerOnBeatEmitter : MonoBehaviour
 
     public float CurrentTempo { get { return _timelineInfo != null ? _timelineInfo.currentTempo : 0f; } }
 
-    public FMODUnity.StudioEventEmitter eventEmitter;
+    //[SerializeField] [EventRef] private string _musicEventRef = "";
+    [SerializeField] private FMODUnity.StudioEventEmitter _musicEventEmitter;
 
     [Header("Events")]
     public UnityEvent actionOnOne;
@@ -32,8 +33,10 @@ public class TriggerOnBeatEmitter : MonoBehaviour
     private GCHandle _timelineHandle;
 
     private FMOD.Studio.EVENT_CALLBACK _beatCallback;
+    private FMOD.Studio.EventInstance _musicInstance;
 
     private int _previousBar;
+    private bool _listeningForEvents;
 
     void Start()
     {
@@ -45,15 +48,28 @@ public class TriggerOnBeatEmitter : MonoBehaviour
 
         // Pin the class that will store the data modified during the callback
         _timelineHandle = GCHandle.Alloc(_timelineInfo, GCHandleType.Pinned);
-        // Pass the object through the userdata of the instance
-        eventEmitter.EventInstance.setUserData(GCHandle.ToIntPtr(_timelineHandle));
+    }
 
-        eventEmitter.EventInstance.setCallback(_beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
-        eventEmitter.EventInstance.start();
+    [ContextMenu("Listen")]
+    public void ListenForEvents()
+    {
+        _musicInstance = _musicEventEmitter.EventInstance;// FMODUnity.RuntimeManager.CreateInstance(_musicEventRef);
+
+        // Pass the object through the userdata of the instance
+        _musicInstance.setUserData(GCHandle.ToIntPtr(_timelineHandle));
+
+        _musicInstance.setCallback(_beatCallback, FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
+
+        _listeningForEvents = true;
     }
 
     private void Update()
     {
+        if(!_listeningForEvents && _musicEventEmitter.IsPlaying())
+        {
+            ListenForEvents();
+        }
+
         if (_timelineInfo.currentBeat != -1)
         {
             actionOnOne.Invoke();
@@ -73,8 +89,9 @@ public class TriggerOnBeatEmitter : MonoBehaviour
 
     void OnDestroy()
     {
-        // Clear the user data pointer and free the marker handle for garbage collections
-        eventEmitter.EventInstance.setUserData(IntPtr.Zero);
+        _musicInstance.setUserData(IntPtr.Zero);
+        _musicInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        _musicInstance.release();
         _timelineHandle.Free();
     }
 
@@ -93,7 +110,7 @@ public class TriggerOnBeatEmitter : MonoBehaviour
         FMOD.RESULT result = instance.getUserData(out timelineInfoPtr);
         if (result != FMOD.RESULT.OK)
         {
-            UnityEngine.Debug.LogError("Timeline Callback error: " + result);
+            Debug.LogError("Timeline Callback error: " + result);
         }
         else if (timelineInfoPtr != IntPtr.Zero)
         {

@@ -7,7 +7,7 @@ public class ObstacleMovement : MonoBehaviour, IBeatListener
 {
     [SerializeField] private float _speed = 1f;
 
-    private TriggerOnBeat _beatTrigger;
+    private TriggerOnBeatEmitter _beatTrigger;
 
     protected void OnDisable()
     {
@@ -28,7 +28,7 @@ public class ObstacleMovement : MonoBehaviour, IBeatListener
         DOTween.KillAll();
     }
 
-    public void SetBeatTrigger(TriggerOnBeat triggerOnBeat)
+    public void SetBeatTrigger(TriggerOnBeatEmitter triggerOnBeat)
     {
         _beatTrigger = triggerOnBeat;
 

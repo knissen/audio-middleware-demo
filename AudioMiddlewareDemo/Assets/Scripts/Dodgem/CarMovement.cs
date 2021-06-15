@@ -14,7 +14,7 @@ public class CarMovement : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        float nextX = 0;
+        float nextX = -10;
 
         if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
@@ -31,7 +31,7 @@ public class CarMovement : MonoBehaviour
             }
         }
 
-        if(nextX != 0)
+        if(nextX != -10)
         {
             if (_activeTween != null && _activeTween.active)
                 _activeTween.Complete();

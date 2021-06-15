@@ -48,6 +48,7 @@ public class TriggerOnBeat : MonoBehaviour
 
         // Pin the class that will store the data modified during the callback
         _timelineHandle = GCHandle.Alloc(_timelineInfo, GCHandleType.Pinned);
+
         // Pass the object through the userdata of the instance
         _musicInstance.setUserData(GCHandle.ToIntPtr(_timelineHandle));
 

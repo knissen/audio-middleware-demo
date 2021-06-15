@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x8000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000002CA32EE8538 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000013252944CF8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x8000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -21,7 +21,568 @@
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000001324A829088 : node = 000001324A8DDC30
+[LOG] SystemI::createSound                     : add node to async list : head = 00000131BE25CC18.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A829088
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A82C9E8 : node = 000001324A8DD230
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324A8DDD40
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSound                     :     setdata soundi = 00000132485985A8 : node = 000001324A8DDAF0
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 1
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000132485943D8 : node = 000001324AA20270
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000013248591EB8 : node = 000001324AA20770
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000013248594A98 : node = 000001324AA208B0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000013248597678 : node = 000001324AA209F0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 5
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000013248596598 : node = 000001315E239B00
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 6
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000132485928D8 : node = 000001315E239EC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000013248594738 : node = 00000131C1188AC0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000132485948E8 : node = 0000012FBDC96940
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 9
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000132485954B8 : node = 0000012FBDC0FA10
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 10
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem)', format=5, channels=2, frequency=48000, lengthbytes=1352288, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.051086.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A829088
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A82C9E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324A8DD340
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem)', format=5, channels=2, frequency=48000, lengthbytes=1871328, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184906.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A82C9E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000132485985A8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324A8DDC00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem)', format=5, channels=2, frequency=48000, lengthbytes=255616, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.130920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000132485985A8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000132485943D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324AA20380
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem)', format=5, channels=2, frequency=48000, lengthbytes=1901888, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125458.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000132485943D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248591EB8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324AA20880
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem)', format=5, channels=2, frequency=48000, lengthbytes=971200, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430206.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248591EB8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248594A98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324AA209C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem)', format=5, channels=2, frequency=48000, lengthbytes=1290304, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254242.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248594A98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248597678
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324AA20B00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem)', format=5, channels=2, frequency=48000, lengthbytes=2027744, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.227661.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248597678
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248596598
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001315E239C10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem)', format=5, channels=2, frequency=48000, lengthbytes=644768, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.417267.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248596598
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000132485928D8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001315E239FD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem)', format=5, channels=2, frequency=48000, lengthbytes=1954368, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175720.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000132485928D8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248594738
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000131C1188BD0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem)', format=5, channels=2, frequency=48000, lengthbytes=2239904, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.444977.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248594738
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000132485948E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC96A50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem)', format=5, channels=2, frequency=48000, lengthbytes=2416256, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.725037.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000132485948E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000132485954B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0FB20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 66468
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem)', format=5, channels=2, frequency=48000, lengthbytes=1971648, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.470947.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000132485954B8
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324A827588)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (00000131C4307008)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324A8264A8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324A8284B8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (00000131BDF53668)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324A825C38)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324A825F98)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (00000131BDF534C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324A8278E8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324A82A678)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (00000131C4AC8E48)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324A82AEE8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324A829E08)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (00000131C4AC8B08)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324A82BAB8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324A82A9D8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (00000131C4305678)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324A825218)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324A8269B8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (00000131C4304E58)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324A825A88)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324A82B758)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324AA31A28)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324A82A318)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324A825068)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324AA31888)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324A82A168)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324A829AA8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324AA316E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324A826148)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324A829748)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (00000131BE3158C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324A82AD38)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000013248599838 : node = 0000012FBDC0FC90
+[LOG] SystemI::createSound                     : add node to async list : head = 00000131BE25CC18.  list count = 0
+[LOG] SystemI::createSound                     : filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248599838
+[LOG] SystemI::createSound                     : setdata soundi = 0000013248591498 : node = 0000012FBDC10550
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324858C1E8 : node = 0000012FBDC0FF10
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0FDA0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324858B978 : node = 0000012FBDC10690
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 2
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324858D2C8 : node = 0000012FBDC0F290
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 3
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A8278E8 : node = 0000012FBDC0F3D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 4
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A8289C8 : node = 0000012FBDC0FDD0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 5
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A827588 : node = 0000012FBDC10CD0
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 6
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A825218 : node = 0000012FBDC0F790
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 7
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A828D28 : node = 0000012FBDC10A50
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 8
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A827C48 : node = 000001324AA20C70
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 9
+[LOG] SystemI::createSound                     :     filename = Assets\FMOD\audioDemo\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 000001324A829748 : node = 000001315FF15590
+[LOG] SystemI::createSound                     :     add node to async list : head = 00000131BE25CC18.  list count = 10
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem)', format=5, channels=2, frequency=48000, lengthbytes=1352288, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.051086.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248599838
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000013248591498
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC10660
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem)', format=5, channels=2, frequency=48000, lengthbytes=1871328, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184906.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000013248591498
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324858C1E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC10020
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem)', format=5, channels=2, frequency=48000, lengthbytes=255616, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.130920.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324858C1E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324858B978
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC107A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem)', format=5, channels=2, frequency=48000, lengthbytes=1901888, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.125458.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324858B978
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324858D2C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0F3A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem)', format=5, channels=2, frequency=48000, lengthbytes=971200, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.430206.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324858D2C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A8278E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0F4E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem)', format=5, channels=2, frequency=48000, lengthbytes=1290304, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.254242.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A8278E8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A8289C8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0FEE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem)', format=5, channels=2, frequency=48000, lengthbytes=2027744, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.227661.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A8289C8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A827588
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC10DE0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem)', format=5, channels=2, frequency=48000, lengthbytes=644768, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.417267.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A827588
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A825218
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC0F8A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem)', format=5, channels=2, frequency=48000, lengthbytes=1954368, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.175720.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A825218
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A828D28
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000012FBDC10B60
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem)', format=5, channels=2, frequency=48000, lengthbytes=2239904, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.444977.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A828D28
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A827C48
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001324AA20D80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem)', format=5, channels=2, frequency=48000, lengthbytes=2416256, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.725037.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A827C48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001324A829748
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\FMOD\audioDemo\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 65805792
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 44576
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001315FF156A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 97384
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem)', format=5, channels=2, frequency=48000, lengthbytes=1971648, lengthpcm=11610906, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.470947.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001324A829748
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (00000132485954B8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324B273368)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324859A408)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (00000132485948E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (000001324B273028)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (000001324859A768)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (0000013248594738)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324B272328)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (0000013248599328)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (00000132485928D8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324B2731C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (0000013248598E18)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (0000013248596598)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324B2724C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (0000013248599D48)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (0000013248597678)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324B272188)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (0000013248598758)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (0000013248594A98)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324B271FE8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (0000013248599EF8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (0000013248591EB8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324B271488)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324859A258)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (00000132485943D8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324B271148)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324859A0A8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (00000132485985A8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324B270108)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (0000013248599B98)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324A82C9E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324B272668)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (0000013248596088)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324A829088)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324B272E88)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (0000013248595B78)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (000001324A827C48)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (000001324B273EC8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 25 Deep Blue (Tyler Lead Stem) (000001324A8269B8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324A828D28)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324B273D28)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 05 Deep Blue (Drums Stem) (000001324A82BAB8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324A8289C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324B273848)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 28 Deep Blue (Zebra Neptune Arp Stem) (000001324A82A678)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324A8278E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324B2736A8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 01 Deep Blue (Bass Daytona Stem) (000001324A82A318)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324A825218)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324B273B88)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 30 Deep Blue (Zebra2 Lost Boy Plucks Stem) (000001324A82AD38)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324858D2C8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324B270448)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 21 Deep Blue (Sax Solo Stem) (000001324A829E08)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (0000013248591498)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324B273508)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 02 Deep Blue (Bass Miami Stem) (000001324A829AA8)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (0000013248599838)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324B270C68)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 09 Deep Blue (FX - Collateral Noise Sweep Stem) (000001324A82B758)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324A827588)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324B2739E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 24 Deep Blue (Tyler Dubs Stem) (000001324A82B908)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324858B978)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324B270788)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 27 Deep Blue (Zebra Crystalline Arp Stem) (000001324A825068)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324858C1E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324B271628)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 26 Deep Blue (Vocoder Harmony Stem) (000001324A82A168)
+[LOG] SoundI::release                          : The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324A829748)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324B2705E8)
+[LOG] SoundI::release                          :     The Midnight - Deep Blue (The Stems) - 29 Deep Blue (Zebra2 Big Reverb Plucks Stem) (000001324A82AEE8)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
+[LOG] Manager::readBank                        : fileversion = 135, compatVersion = 132 (oldest = 44, newest = 135)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -29,3 +590,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.

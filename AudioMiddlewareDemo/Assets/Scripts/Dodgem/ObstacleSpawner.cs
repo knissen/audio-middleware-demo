@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(TriggerOnBeat))]
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> _obstacles = new List<GameObject>();
@@ -11,11 +10,11 @@ public class ObstacleSpawner : MonoBehaviour
 
     [SerializeField][Range(0,1)] private float _spawnChance = 0.5f;
 
-    private TriggerOnBeat _beatTrigger;
+    private TriggerOnBeatEmitter _beatTrigger;
 
     protected void Awake()
     {
-        _beatTrigger = GetComponent<TriggerOnBeat>();
+        _beatTrigger = GetComponent<TriggerOnBeatEmitter>();
     }
 
     private bool ShouldSpawn => Random.Range(0f, 1f) < _spawnChance;

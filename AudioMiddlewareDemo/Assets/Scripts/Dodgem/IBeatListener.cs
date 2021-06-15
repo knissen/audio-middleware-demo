@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IBeatListener
 {
-    void SetBeatTrigger(TriggerOnBeat triggerOnBeat);
+    void SetBeatTrigger(TriggerOnBeatEmitter triggerOnBeat);
 }

@@ -13,6 +13,7 @@ public class OutrunAudioParameters : MonoBehaviour
     [ParamRef] public string saxParameter;
 
     private bool _vocalHasBeenSet = false;
+    private bool _saxHasBeenSet = false;
     
     protected void Update()
     {
@@ -24,8 +25,13 @@ public class OutrunAudioParameters : MonoBehaviour
             RuntimeManager.StudioSystem.setParameterByName(vocalParameter, 1);
         }
 
-
         float saxValue = scoreBoard.Score >= scoreToTriggerSax ? 1f : 0f;
-        RuntimeManager.StudioSystem.setParameterByName(saxParameter, saxValue);
+
+        if(saxValue == 1 && !_saxHasBeenSet)
+        {
+            _saxHasBeenSet = true;
+            RuntimeManager.StudioSystem.setParameterByName(saxParameter, saxValue);
+        }
+
     }
 }
