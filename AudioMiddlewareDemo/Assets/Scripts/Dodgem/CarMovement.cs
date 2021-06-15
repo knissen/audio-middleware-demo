@@ -14,29 +14,29 @@ public class CarMovement : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        Vector3 nextDelta = Vector3.zero;
+        float nextX = 0;
 
         if(Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A))
         {
             if(transform.position.x > 0)
             {
-                nextDelta = Vector3.left;
+                nextX = Mathf.RoundToInt(transform.position.x) - 1;
             }
         }
         else if (Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D))
         {
             if (transform.position.x < 4)
             {
-                nextDelta = Vector3.right;
+                nextX = Mathf.RoundToInt(transform.position.x) + 1;
             }
         }
 
-        if(nextDelta != Vector3.zero)
+        if(nextX != 0)
         {
             if (_activeTween != null && _activeTween.active)
-                DOTween.Kill(_activeTween);
+                _activeTween.Complete();
 
-            _activeTween = transform.DOMove(transform.position + nextDelta, _moveTime).SetEase(_moveEase);
+            _activeTween = transform.DOMoveX(nextX, _moveTime).SetEase(_moveEase);
         }
     }
 }

@@ -18,6 +18,7 @@ public class TriggerOnBeat : MonoBehaviour
     }
 
     public event System.EventHandler Beat;
+    public event System.EventHandler Bar;
 
     public float CurrentTempo { get { return _timelineInfo != null ? _timelineInfo.currentTempo : 0f; } }
 
@@ -25,12 +26,15 @@ public class TriggerOnBeat : MonoBehaviour
 
     [Header("Events")]
     public UnityEvent actionOnOne;
+    public UnityEvent actionOnBar;
 
     private TimelineInfo _timelineInfo;
     private GCHandle _timelineHandle;
 
     private FMOD.Studio.EVENT_CALLBACK _beatCallback;
     private FMOD.Studio.EventInstance _musicInstance;
+
+    private int _previousBar;
 
     void Start()
     {
@@ -55,10 +59,18 @@ public class TriggerOnBeat : MonoBehaviour
     {
         if (_timelineInfo.currentBeat != -1)
         {
-            actionOnOne?.Invoke();
+            actionOnOne.Invoke();
             Beat?.Invoke(this, EventArgs.Empty);
 
             _timelineInfo.currentBeat = -1;
+        }
+
+        if(_timelineInfo.currentMusicBar != _previousBar)
+        {
+            _previousBar = _timelineInfo.currentMusicBar;
+
+            actionOnBar.Invoke();
+            Bar?.Invoke(this, EventArgs.Empty);
         }
     }
 

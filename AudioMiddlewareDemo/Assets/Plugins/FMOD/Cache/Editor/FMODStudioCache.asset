@@ -35,7 +35,7 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637494146148870535
+  lastModified: 637593059111102934
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -61,7 +61,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3829190373291206794}
+  - {fileID: -6345632034087817750}
   MinDistance: 10
   MaxDistance: 100
   Length: 3500
@@ -107,7 +107,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7048880460230054627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,9 +163,29 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637494146148820388
+  lastModified: 637593059111042961
   LoadResult: 0
   FileSizes: []
+  Exists: 1
+--- !u!114 &-6345632034087817750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-5970307655692998662
 MonoBehaviour:
@@ -276,6 +296,46 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &-4005569168646961941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-2941260029723319985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/VocalBridge
+  m_EditorClassIdentifier: 
+  Name: VocalBridge
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2780331960
+    data2: 2311983388
+  Exists: 1
 --- !u!114 &-2020034622055620832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,11 +405,13 @@ MonoBehaviour:
   - {fileID: -8323918058257652145}
   EditorParameters:
   - {fileID: 855862323195444300}
+  - {fileID: 1004683509314441205}
+  - {fileID: -2941260029723319985}
   MasterBanks:
   - {fileID: -7026174651546890743}
   StringsBanks:
   - {fileID: -8439730817516687894}
-  stringsBankWriteTime: 637494146148870535
+  stringsBankWriteTime: 637593059111102934
   cacheVersion: 6
 --- !u!114 &441604261358228330
 MonoBehaviour:
@@ -370,12 +432,10 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters:
-  - {fileID: -7129037892435627320}
-  - {fileID: 1930455196184237449}
+  Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 241893
+  Length: 155816
 --- !u!114 &855862323195444300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,6 +455,26 @@ MonoBehaviour:
   ID:
     data1: 279298302
     data2: 105250514
+  Exists: 1
+--- !u!114 &1004683509314441205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1521204818
+    data2: 2226895783
   Exists: 1
 --- !u!114 &1148674593604005095
 MonoBehaviour:
@@ -460,7 +540,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &2765651184188750698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -546,7 +626,7 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &4632633425095401195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +667,46 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &5492687712596793645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/The Midnight - Deep Blue/SaxyTime
+  m_EditorClassIdentifier: 
+  Name: SaxyTime
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &5612425234823521495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &6032817230315328886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,6 +750,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 1
+--- !u!114 &7340787051655725454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &7379304615302155775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,3 +836,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3750
+--- !u!114 &9164872384224632489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
