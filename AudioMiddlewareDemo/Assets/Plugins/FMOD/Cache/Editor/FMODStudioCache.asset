@@ -35,11 +35,11 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637593127492714021
+  lastModified: 637593854005242713
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1484
+    Value: 1526
   Exists: 1
 --- !u!114 &-8323918058257652145
 MonoBehaviour:
@@ -61,7 +61,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 4783650830052065411}
+  - {fileID: -6120919967593748135}
   MinDistance: 10
   MaxDistance: 100
   Length: 3500
@@ -183,7 +183,7 @@ MonoBehaviour:
   Path: Assets/FMOD/audioDemo/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637593127492664035
+  lastModified: 637593854005192724
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -207,6 +207,26 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-6120919967593748135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FlockOfGeese/Count
+  m_EditorClassIdentifier: 
+  Name: Count
+  Min: 0
+  Max: 20
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
 --- !u!114 &-5970307655692998662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +376,29 @@ MonoBehaviour:
     data1: 2780331960
     data2: 2311983388
   Exists: 1
+--- !u!114 &-2296278439032678385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Button Click
+  m_EditorClassIdentifier: 
+  Path: event:/Button Click
+  guid: 218085297e98de48af2739bb87b39dd9
+  Banks:
+  - {fileID: -7026174651546890743}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 90
 --- !u!114 &-2020034622055620832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -423,6 +466,7 @@ MonoBehaviour:
   - {fileID: 441604261358228330}
   - {fileID: 8242743017387462775}
   - {fileID: -8323918058257652145}
+  - {fileID: -2296278439032678385}
   EditorParameters:
   - {fileID: 855862323195444300}
   - {fileID: 1004683509314441205}
@@ -431,7 +475,7 @@ MonoBehaviour:
   - {fileID: -7026174651546890743}
   StringsBanks:
   - {fileID: -8439730817516687894}
-  stringsBankWriteTime: 637593127492714021
+  stringsBankWriteTime: 637593854005242713
   cacheVersion: 6
 --- !u!114 &441604261358228330
 MonoBehaviour:
